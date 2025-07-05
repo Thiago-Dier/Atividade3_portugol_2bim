@@ -1,0 +1,96 @@
+programa
+{
+	
+real total = 0.0
+	
+	funcao inicio()
+	{
+		limpa()
+		
+		inteiro opcao = -1
+
+		menu()
+
+		enquanto(opcao != 000){
+
+			escreva("Informe uma opção: ")
+		     leia(opcao)
+
+		     escolha(opcao){
+
+			caso 100:
+				escreva("Vc escolheu Dogao\n")
+				calcular_subtotal(5.00)
+				pare
+
+			caso 101:
+				escreva("Vc escolheu Bauru\n")
+				calcular_subtotal(2.60)
+				pare
+
+			caso 102:
+				escreva("Vc escolheu Bauru c/ ovo\n")
+				calcular_subtotal(3.80)
+				pare
+
+			caso 103:
+				escreva("Vc escolheu Hamburguer\n")
+				calcular_subtotal(9.00)
+				pare
+
+      caso 104:
+				escreva("Vc escolheu Cheeseburguer\n")
+				calcular_subtotal(11.00)
+				pare
+
+      caso 105:
+				escreva("Vc escolheu Refrigerante\n")
+				calcular_subtotal(3.00)
+				pare
+
+      caso 106:
+				escreva("Vc escolheu Semente dos deuses\n")
+				calcular_subtotal(1000.00)
+				pare
+
+			caso 000:
+				escreva("Vc escolheu Sair\n")
+				escreva("Sua conta deu o total de R$", total, " reais.")
+				pare
+
+			caso contrario:
+				escreva("Essa opção não está disponível")
+				pare
+
+		}
+	   }
+	}
+ 
+
+	funcao menu(){
+		
+		escreva("***************************\n")
+		escreva("*  Lanchonete do campus   *\n")
+		escreva("***************************\n")
+		escreva("100 - Dogao                \n")
+		escreva("101 - Bauru                \n")
+		escreva("102 - Bauru c/ ovo         \n")
+		escreva("103 - Hamburguer           \n")
+		escreva("104 - Cheeseburguer        \n")
+    escreva("105 - Refrigerante         \n")
+    escreva("106 - Semente dos deuses   \n")
+    escreva("000 - Sair                 \n")
+		escreva("*************************\n")
+		
+	} 
+
+	funcao calcular_subtotal(real valor_produto){
+		
+	 	inteiro unidades
+		escreva("Quantas unidades? ")
+		leia(unidades)
+
+		total += unidades * valor_produto
+				
+	}
+}
