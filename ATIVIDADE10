@@ -1,0 +1,19 @@
+programa {
+  funcao inicio() {
+    
+    inteiro km, acima
+    escreva("Quantos km o seu carro estava? ")
+    leia(km)
+
+    acima = (km-80)*7
+
+    se (km > 80){
+      escreva("O seu carro estava acima do limite, vc tem que pagar uma multa de ", acima, " reais")
+    }
+
+    senao {
+      escreva("Você estava dentro do limite")
+    }
+
+  }
+}
