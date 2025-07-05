@@ -1,0 +1,17 @@
+programa {
+  funcao inicio() {
+    
+    cadeia letra
+    escreva("Informe a letra(em minúsculo) ")
+    leia(letra)
+
+    se(letra == "a" ou letra == "b" ou letra == "c" ou letra == "d" ou letra == "e"){
+      escreva("Essa letra é uma vogal")
+    }
+
+    senao {
+      escreva("Essa letra é uma consoante")
+    }
+
+  }
+}
